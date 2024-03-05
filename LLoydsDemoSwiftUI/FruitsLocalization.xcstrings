@@ -1,0 +1,60 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Calories:" : {
+
+    },
+    "Carbohydrates:" : {
+
+    },
+    "Decode error" : {
+
+    },
+    "Family:" : {
+
+    },
+    "Fat:" : {
+
+    },
+    "Fruits" : {
+
+    },
+    "Genus:" : {
+
+    },
+    "Home" : {
+
+    },
+    "Name:" : {
+
+    },
+    "Order:" : {
+
+    },
+    "Protein:" : {
+
+    },
+    "Select background Color" : {
+
+    },
+    "Select text Color" : {
+
+    },
+    "Session expired" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Sugar:" : {
+
+    },
+    "Unknown error" : {
+
+    },
+    "Update" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "22A874B7-C556-43CF-8E49-951C064B701D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "655DA884-4063-4B9F-BEE4-617E44FD1F88"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LLoydsDemoSwiftUITests/Network/HTTPClientTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "testSendRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "655DA884-4063-4B9F-BEE4-617E44FD1F88 - b1278b2bfcd6fff3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in LLoydsDemoSwiftUITests.HTTPClientTest.testSendRequest() -&gt; ()"
+                  moduleName = "LLoydsDemoSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankbansa4/Desktop/AnkurDemoBitBucket/demoforlloyds/LLoydsDemoSwiftUI/LLoydsDemoSwiftUITests/Network/HTTPClientTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "265">
+               </Location>
+               <Location
+                  uuid = "655DA884-4063-4B9F-BEE4-617E44FD1F88 - b1278b2bfcd6ffb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in LLoydsDemoSwiftUITests.HTTPClientTest.testSendRequest() -&gt; ()"
+                  moduleName = "LLoydsDemoSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankbansa4/Desktop/AnkurDemoBitBucket/demoforlloyds/LLoydsDemoSwiftUI/LLoydsDemoSwiftUITests/Network/HTTPClientTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "285">
+               </Location>
+               <Location
+                  uuid = "655DA884-4063-4B9F-BEE4-617E44FD1F88 - b1278b2bfcd6ff92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in LLoydsDemoSwiftUITests.HTTPClientTest.testSendRequest() -&gt; ()"
+                  moduleName = "LLoydsDemoSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankbansa4/Desktop/AnkurDemoBitBucket/demoforlloyds/LLoydsDemoSwiftUI/LLoydsDemoSwiftUITests/Network/HTTPClientTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "271">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
