@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "3C43A8B4-B461-4741-97A5-AC7B3167A476",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:LLoydsDemoSwiftUI.xcodeproj",
+      "identifier" : "898009C42B4FE29200DABBB1",
+      "name" : "LLoydsDemoSwiftUI"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LLoydsDemoSwiftUI.xcodeproj",
+        "identifier" : "898009D42B4FE29500DABBB1",
+        "name" : "LLoydsDemoSwiftUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

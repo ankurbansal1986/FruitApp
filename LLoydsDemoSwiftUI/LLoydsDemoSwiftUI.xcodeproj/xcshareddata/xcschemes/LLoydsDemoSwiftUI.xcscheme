@@ -26,8 +26,13 @@
       buildConfiguration = "Testing"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:LLoydsDemoSwiftUI.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -37,6 +42,17 @@
                BlueprintIdentifier = "898009D42B4FE29500DABBB1"
                BuildableName = "LLoydsDemoSwiftUITests.xctest"
                BlueprintName = "LLoydsDemoSwiftUITests"
+               ReferencedContainer = "container:LLoydsDemoSwiftUI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "899A5C772B9E07740034EAB6"
+               BuildableName = "LLoydsDemoSwiftUIUITests.xctest"
+               BlueprintName = "LLoydsDemoSwiftUIUITests"
                ReferencedContainer = "container:LLoydsDemoSwiftUI.xcodeproj">
             </BuildableReference>
          </TestableReference>

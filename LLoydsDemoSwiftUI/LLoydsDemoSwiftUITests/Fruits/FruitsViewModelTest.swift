@@ -6,11 +6,18 @@
 //
 
 import XCTest
+import SnapshotTesting
+
 @testable import LLoydsDemoSwiftUI
+import SwiftUI
 final class FruitsViewModelTest: XCTestCase {
 
-    let fruitsViewModel = FruitsViewModel<FruitModel>()
-
+    let fruitsViewModel = FruitsViewModel<FruitModel, FruitsUseCases>(useCase: FruitsUseCases(repository: FruitsDataRepository()))
+   
+    override func setUp() async throws {
+       
+    }
+    
     func testGetAllFruits() {
         Task {
             _ = await fruitsViewModel.getAllFruits()
@@ -61,4 +68,33 @@ final class FruitsViewModelTest: XCTestCase {
                                                 Nutritions(calories: 37, fat: 0.2, sugar: 8.5, carbohydrates: 9.67, protein: 0.82)),
                                   FruitModel(name: nil, id: nil, family: nil, order: nil, genus: nil, nutritions: nil)]
        }
+    
+    func testFruitsList() {
+        setMockdata()
+        fruitsViewModel.isDataLoaded = true
+        let fruitList = FruitsListView<FruitModel, FruitsUseCases>(viewModel: fruitsViewModel).environmentObject(Theme())
+        let viewControler = fruitList.toViewController()
+        viewControler.performSnapshotTests(named: "FruitList")
     }
+}
+
+extension View {
+    func toViewController() -> UIViewController {
+        let viewController = UIHostingController(rootView: self)
+        viewController.view.frame = UIScreen.main.bounds
+        return viewController
+    }
+}
+
+extension UIViewController {
+    func performSnapshotTests(
+            named name: String,
+            precision: Float = 0.99,
+            testName: String = "Snapshot") {
+            assertSnapshot(
+                matching: self,
+                as: .image(precision: precision),
+                named: name,
+                testName: testName)
+        }
+}

@@ -24,7 +24,7 @@ extension Navigator {
     func rootView() -> FruitsListView<FruitModel, FruitsUseCases<FruitsDataRepository>> {
         let useCase = FruitsUseCases(repository: FruitsDataRepository())
         let viewModel = FruitsViewModel<FruitModel, FruitsUseCases>(useCase: useCase)
-        return FruitsListView<FruitModel,FruitsUseCases>(viewModel: viewModel)
+        return FruitsListView<FruitModel, FruitsUseCases>(viewModel: viewModel)
     }
     
     // Returns nutritions view
