@@ -30,19 +30,22 @@ final class HTTPClientTest: XCTestCase {
         Task {
             let service = MockService()
             let result = await service.getAllFruits(endPoint: MockNegativeEndpoint(path: " ", jsonFileName: "AllFruits" ))
-            
-            guard case .failure(_) = result else {
-                return XCTFail("Expected to be a fail but got success")
+            DispatchQueue.main.async {
+                guard case .failure = result else {
+                    return XCTFail("Expected to be a fail but got success")
+                }
             }
         }
         
         Task {
             let service = MockService()
             let result = await service.getAllFruits(endPoint: MockNegativeEndpoint(path: "/api/fruit/all", jsonFileName: "" ))
-            
-            guard case .failure(_) = result else {
-                return XCTFail("Expected to be a fail but got success")
+            DispatchQueue.main.async {
+                guard case .failure = result else {
+                    return XCTFail("Expected to be a fail but got success")
+                }
             }
+           
         }
     }
 }

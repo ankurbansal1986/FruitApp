@@ -46,6 +46,7 @@
 		89D6EDBB2B50603A00959013 /* AllFruits.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D6EDB92B50603A00959013 /* AllFruits.json */; };
 		89D6EDBC2B50603A00959013 /* FruitsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6EDBA2B50603A00959013 /* FruitsViewModelTest.swift */; };
 		89D6EDBF2B51313200959013 /* RowViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6EDBE2B51313200959013 /* RowViewModifier.swift */; };
+		89D91E232BAC0A6C00E81C04 /* FruitsListServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D91E222BAC0A6C00E81C04 /* FruitsListServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		89D6EDB92B50603A00959013 /* AllFruits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllFruits.json; sourceTree = "<group>"; };
 		89D6EDBA2B50603A00959013 /* FruitsViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsViewModelTest.swift; sourceTree = "<group>"; };
 		89D6EDBE2B51313200959013 /* RowViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModifier.swift; sourceTree = "<group>"; };
+		89D91E222BAC0A6C00E81C04 /* FruitsListServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +405,7 @@
 				89D6EDB82B50603A00959013 /* MockData */,
 				89D6EDBA2B50603A00959013 /* FruitsViewModelTest.swift */,
 				89B6081D2B5FFEE700CA54AC /* NutritionsViewModelTest.swift */,
+				89D91E222BAC0A6C00E81C04 /* FruitsListServiceTest.swift */,
 			);
 			path = Fruits;
 			sourceTree = "<group>";
@@ -425,7 +428,6 @@
 				898009C12B4FE29200DABBB1 /* Sources */,
 				898009C22B4FE29200DABBB1 /* Frameworks */,
 				898009C32B4FE29200DABBB1 /* Resources */,
-				89109CAD2B57FF14007E5562 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -525,26 +527,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		89109CAD2B57FF14007E5562 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		898009C12B4FE29200DABBB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -583,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D91E232BAC0A6C00E81C04 /* FruitsListServiceTest.swift in Sources */,
 				89B6081E2B5FFEE700CA54AC /* NutritionsViewModelTest.swift in Sources */,
 				89B608212B6003EF00CA54AC /* HTTPClientTest.swift in Sources */,
 				899A5C892B9E14DF0034EAB6 /* SettingsTest.swift in Sources */,

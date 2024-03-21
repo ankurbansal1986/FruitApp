@@ -44,7 +44,7 @@ final class NutritionsViewModelTest: XCTestCase {
     
     func testNutritionsView() {
         
-        var nutritionsViewModel = NutritionsViewModel(fruitRenderModel: FruitModel(name: "Cherry", id: 8, family: "Rosaceae", order: "Rosales", genus: "Prunus", nutritions:
+        let nutritionsViewModel = NutritionsViewModel(fruitRenderModel: FruitModel(name: "Cherry", id: 8, family: "Rosaceae", order: "Rosales", genus: "Prunus", nutritions:
                                                                                     Nutritions(calories: 50, fat: 0.3, sugar: 8.0, carbohydrates: 12.0, protein: 1.0)))
        
         let nutritionsView = NutritionsView(viewModel: nutritionsViewModel).environmentObject(Theme())
