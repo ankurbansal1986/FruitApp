@@ -27,7 +27,7 @@ extension FruitModel: FruitRenderModel {
     }
     
     var nameString: String {
-        "\(String(localized: "Name:", table: "FruitsLocalization")) \(name ?? "")"
+        "\(name ?? "")"
     }
     
     var familyString: String {

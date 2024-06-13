@@ -13,16 +13,18 @@ struct NutritionsView<T: FruitRenderModel>: View {
     }
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Constants.padding) {
-                Text(viewModel.fruitRenderModel.caloriesString)
-                Text(viewModel.fruitRenderModel.fatString)
-                Text(viewModel.fruitRenderModel.carbohydtrateString)
-                Text(viewModel.fruitRenderModel.sugarString)
-                Text(viewModel.fruitRenderModel.proteinString)
-                Spacer()
+            HStack(alignment: .center, spacing: Constants.padding) {
+                VStack(alignment: .leading, spacing: Constants.padding) {
+                    Text(viewModel.fruitRenderModel.caloriesString)
+                    Text(viewModel.fruitRenderModel.fatString)
+                    Text(viewModel.fruitRenderModel.carbohydtrateString)
+                    Text(viewModel.fruitRenderModel.sugarString)
+                    Text(viewModel.fruitRenderModel.proteinString)
+                    
+                }
+                .modifier(TextModifier())
+                .modifier(ForegroundModifier())
             }
-            .modifier(TextModifier())
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             .padding(Constants.padding)
         }
         .modifier(BackgroundModifier())
@@ -33,4 +35,4 @@ struct NutritionsView<T: FruitRenderModel>: View {
 #Preview {
     NutritionsView<FruitModel>(viewModel: NutritionsViewModel(fruitRenderModel: FruitModel(name: "Cherry", id: 8, family: "Rosaceae", order: "Rosales", genus: "Prunus",
                                                                                            nutritions: Nutritions(calories: 50, fat: 0.3, sugar: 8.0, carbohydrates: 12.0, protein: 1.0))))
-   }
+}

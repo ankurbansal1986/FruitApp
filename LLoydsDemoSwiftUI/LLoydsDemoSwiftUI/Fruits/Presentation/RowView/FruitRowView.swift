@@ -9,19 +9,21 @@ import SwiftUI
 struct FruitRowView<T: FruitRenderModel>: View {
     var fruitRenderModel: T
     var backgroundColor: Color = .clear
+    @EnvironmentObject private var theme: Theme
     var body: some View {
         HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: Constants.padding) {
             VStack(alignment: .leading, spacing: Constants.padding) {
-                Text(fruitRenderModel.nameString).modifier(TextModifier(fontStyle: .title))
+                Text(fruitRenderModel.nameString).modifier(TextModifier(fontStyle: .largeTitle, textColor: theme.titleColor))
                 Text(fruitRenderModel.familyString)
                 Text(fruitRenderModel.orderString)
                 Text(fruitRenderModel.genusString)
             }
-            .padding(.bottom)
             .modifier(TextModifier())
-            .background(backgroundColor)
+            .modifier(ForegroundModifier())
+            .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 10)
+            .padding(.vertical, 5)
         }
-        .background(.clear)
+        
     }
 }
 

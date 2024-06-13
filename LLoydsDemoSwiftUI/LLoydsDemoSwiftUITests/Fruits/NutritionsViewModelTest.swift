@@ -15,7 +15,7 @@ final class NutritionsViewModelTest: XCTestCase {
         var nutritionsViewModel = NutritionsViewModel(fruitRenderModel: FruitModel(name: "Cherry", id: 8, family: "Rosaceae", order: "Rosales", genus: "Prunus", nutritions:
                                                                                     Nutritions(calories: 50, fat: 0.3, sugar: 8.0, carbohydrates: 12.0, protein: 1.0)))
         var fruit = nutritionsViewModel.fruitRenderModel
-        XCTAssertTrue(fruit.nameString == "Name: Cherry")
+        XCTAssertTrue(fruit.nameString == "Cherry")
         XCTAssertTrue(fruit.familyString == "Family: Rosaceae")
         XCTAssertTrue(fruit.orderString == "Order: Rosales")
         XCTAssertTrue(fruit.genusString == "Genus: Prunus")
@@ -30,7 +30,7 @@ final class NutritionsViewModelTest: XCTestCase {
         nutritionsViewModel = NutritionsViewModel(fruitRenderModel: FruitModel(name: nil, id: nil, family: nil, order: nil, genus: nil, nutritions: nil))
         
         fruit = nutritionsViewModel.fruitRenderModel
-        XCTAssertTrue(fruit.nameString == "Name: ")
+        XCTAssertTrue(fruit.nameString == "")
         XCTAssertTrue(fruit.familyString == "Family: ")
         XCTAssertTrue(fruit.orderString == "Order: ")
         XCTAssertTrue(fruit.genusString == "Genus: ")

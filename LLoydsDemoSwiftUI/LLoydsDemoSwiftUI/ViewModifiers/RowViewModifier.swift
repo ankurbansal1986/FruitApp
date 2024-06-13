@@ -13,5 +13,6 @@ struct RowViewModifier: ViewModifier {
         content
             .listRowBackground(rowBackgroundColor)
             .listRowInsets(EdgeInsets())
-    }
+            .listRowSeparator(.hidden)
+        }
 }

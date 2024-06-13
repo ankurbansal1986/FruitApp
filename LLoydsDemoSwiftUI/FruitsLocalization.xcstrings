@@ -25,9 +25,6 @@
     "Home" : {
 
     },
-    "Name:" : {
-
-    },
     "Order:" : {
 
     },
@@ -37,7 +34,13 @@
     "Select background Color" : {
 
     },
+    "Select foreground Color" : {
+
+    },
     "Select text Color" : {
+
+    },
+    "Select title Color" : {
 
     },
     "Session expired" : {

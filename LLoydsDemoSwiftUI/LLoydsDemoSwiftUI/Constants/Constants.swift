@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 struct Constants {
     static let backgroundColor = "backgroundColor"
+    static let foregroundColor = "foregroundColor"
     static let textColor = "textColor"
+    static let titleColor = "titleColor"
     static let rowBackgroundColor = "rowBackgroundColor"
     static let horizontalPadding: CGFloat = 16
     static let houseIcon = "house.fill"
@@ -18,4 +20,5 @@ struct Constants {
     static let padding =  16.0
     static let isUnitTestKey = "ISUnitTest"
     static let isUnitTestValue = "YES"
+    static let navigationTitleColor = UIColor.black
 }

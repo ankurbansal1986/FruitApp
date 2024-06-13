@@ -14,6 +14,9 @@ struct FruitsListView<T, U>: View where T: FruitRenderModel, T: Identifiable, U:
     
     init(viewModel: FruitsViewModel<T, U>) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: Constants.navigationTitleColor]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: Constants.navigationTitleColor]
     }
     
     var body: some View {
@@ -28,15 +31,16 @@ struct FruitsListView<T, U>: View where T: FruitRenderModel, T: Identifiable, U:
                     Spacer()
                 } else {
                     List(viewModel.fruits) { fruit in
-                        NavigationLink(destination: nutritionView(fruitRenderModel: fruit)) {
-                            FruitRowView(fruitRenderModel: fruit)
-                            
-                        }
-                        .modifier(RowViewModifier())
+                        FruitRowView(fruitRenderModel: fruit)
+                            .background(
+                                NavigationLink(destination: nutritionView(fruitRenderModel: fruit)) {}
+                                    .opacity(0.0)
+                            )
+                            .modifier(RowViewModifier())
                     }
                 }
             }
-           
+            
             .alert("", isPresented: $viewModel.showAlert) {
             } message: {
                 Text(viewModel.errorMessage ?? "")

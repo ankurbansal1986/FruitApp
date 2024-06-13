@@ -23,6 +23,7 @@
 		89800A0F2B500C5400DABBB1 /* FruitsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89800A052B500C5400DABBB1 /* FruitsListService.swift */; };
 		89800A102B500C5400DABBB1 /* NutritionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89800A072B500C5400DABBB1 /* NutritionsView.swift */; };
 		89800A112B500C5400DABBB1 /* FruitsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89800A082B500C5400DABBB1 /* FruitsListView.swift */; };
+		8982F4AC2C1B175C00C01697 /* ForegroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8982F4AB2C1B175C00C01697 /* ForegroundModifier.swift */; };
 		899A5C5D2B9DFF870034EAB6 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 899A5C5C2B9DFF870034EAB6 /* SnapshotTesting */; };
 		899A5C5F2B9DFF8B0034EAB6 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 899A5C5E2B9DFF8B0034EAB6 /* InlineSnapshotTesting */; };
 		899A5C892B9E14DF0034EAB6 /* SettingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A5C882B9E14DF0034EAB6 /* SettingsTest.swift */; };
@@ -78,6 +79,7 @@
 		89800A052B500C5400DABBB1 /* FruitsListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsListService.swift; sourceTree = "<group>"; };
 		89800A072B500C5400DABBB1 /* NutritionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionsView.swift; sourceTree = "<group>"; };
 		89800A082B500C5400DABBB1 /* FruitsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsListView.swift; sourceTree = "<group>"; };
+		8982F4AB2C1B175C00C01697 /* ForegroundModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForegroundModifier.swift; sourceTree = "<group>"; };
 		899A5C882B9E14DF0034EAB6 /* SettingsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTest.swift; sourceTree = "<group>"; };
 		899A5C8A2B9E16950034EAB6 /* LLoydsDemoSwiftUI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LLoydsDemoSwiftUI.xctestplan; sourceTree = "<group>"; };
 		899B84B92B566A9500D6EB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 		89D6EDAE2B50162A00959013 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8982F4AB2C1B175C00C01697 /* ForegroundModifier.swift */,
 				89D6EDAF2B50252E00959013 /* TextModifier.swift */,
 				89D6EDBE2B51313200959013 /* RowViewModifier.swift */,
 				89B03D902B513D32009ED16E /* BackgroundModifier.swift */,
@@ -552,6 +555,7 @@
 				89800A0E2B500C5400DABBB1 /* FruitRenderModel.swift in Sources */,
 				89D6EDB02B50252E00959013 /* TextModifier.swift in Sources */,
 				89B03D942B544D7B009ED16E /* Navigator.swift in Sources */,
+				8982F4AC2C1B175C00C01697 /* ForegroundModifier.swift in Sources */,
 				898009F92B500BF700DABBB1 /* Endpoint.swift in Sources */,
 				89B03D972B54CD43009ED16E /* LoaderView.swift in Sources */,
 				89800A0B2B500C5400DABBB1 /* FruitRowView.swift in Sources */,
@@ -718,7 +722,6 @@
 				INFOPLIST_FILE = LLoydsDemoSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				ISUnitTest = NO;
@@ -748,7 +751,6 @@
 				INFOPLIST_FILE = LLoydsDemoSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				ISUnitTest = NO;
@@ -880,7 +882,6 @@
 				INFOPLIST_FILE = LLoydsDemoSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				ISUnitTest = YES;

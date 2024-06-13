@@ -36,7 +36,7 @@ final class FruitsViewModelTest: XCTestCase {
         // positive scenario
         setMockdata()
         var fruit = fruitsViewModel.fruits[0]
-        XCTAssertTrue(fruit.nameString == "Name: Cherry")
+        XCTAssertTrue(fruit.nameString == "Cherry")
         XCTAssertTrue(fruit.familyString == "Family: Rosaceae")
         XCTAssertTrue(fruit.orderString == "Order: Rosales")
         XCTAssertTrue(fruit.genusString == "Genus: Prunus")
@@ -49,7 +49,7 @@ final class FruitsViewModelTest: XCTestCase {
         
         // negative scenario
         fruit = fruitsViewModel.fruits[2]
-        XCTAssertTrue(fruit.nameString == "Name: ")
+        XCTAssertTrue(fruit.nameString == "")
         XCTAssertTrue(fruit.familyString == "Family: ")
         XCTAssertTrue(fruit.orderString == "Order: ")
         XCTAssertTrue(fruit.genusString == "Genus: ")

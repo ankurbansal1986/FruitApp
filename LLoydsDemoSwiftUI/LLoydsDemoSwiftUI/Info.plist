@@ -4,5 +4,10 @@
 <dict>
 	<key>ISUnitTest</key>
 	<string>$(ISUnitTest)</string>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>SplashScreenColor</string>
+	</dict>
 </dict>
 </plist>

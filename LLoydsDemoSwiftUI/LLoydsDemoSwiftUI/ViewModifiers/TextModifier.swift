@@ -10,11 +10,13 @@ import Foundation
 import SwiftUI
 struct TextModifier: ViewModifier {
     @EnvironmentObject private var theme: Theme
-    var fontStyle: Font.TextStyle = .body
+    var fontStyle: Font.TextStyle = .title2
+    var textColor: Color?
     
     func body(content: Content) -> some View {
         content
             .font(.system(fontStyle))
-            .foregroundColor(theme.textColor)
+        
+            .foregroundColor(textColor ?? theme.textColor)
     }
 }
